@@ -5,8 +5,12 @@
 }: {
 	programs.zsh = {
 		enable = true;
+		autocd = true;
+		enableCompletion = true;
+		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 		history.size = 50000;
+		localVariables.ZVM_INIT_MODE = "sourcing";
 		plugins = [
 			{
 				name = "zsh-vi-mode";
