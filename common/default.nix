@@ -5,16 +5,8 @@
 	];
 
 	environment.systemPackages = with pkgs; [
-		alejandra
 		btop
-		git
-		git-absorb
-		git-revise
-		gnumake
 		htop
-		llvmPackages_20.clangWithLibcAndBasicRtAndLibcxx
-		llvmPackages_20.libllvm
-		ripgrep
 		vim
 	];
 

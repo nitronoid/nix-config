@@ -23,8 +23,20 @@
 		home-manager.enable = true;
 	};
 
-	home = {
+	home = let
+		llvm = pkgs.llvmPackages_latest;
+	in {
 		packages = with pkgs; [
+			alejandra
+			git
+			git-absorb
+			git-revise
+			gnumake
+			llvm.clang-tools
+			llvm.clangWithLibcAndBasicRtAndLibcxx
+			llvm.libllvm
+			llvm.lldb
+			ripgrep
 			starship
 		];
 		stateVersion = "25.05";
