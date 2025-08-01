@@ -22,6 +22,6 @@
 					};
 			}
 		];
-		initContent = lib.fileContents ./vi.zsh;
+		initContent = lib.fileContents ./init.zsh;
 	};
 }
