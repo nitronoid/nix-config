@@ -4,17 +4,13 @@ Prerequisites
 * `curl`
 
 ```
-# Get the config
-bootstrap=~/nix-bootstrap
-mkdir -p $bootstrap && cd $bootstrap
-curl -sL https://github.com/nitronoid/nix-config/archive/refs/heads/master.tar.gz | tar xz
-cd nix-config-main
-
 # Install nix
-curl -L https://nixos.org/nix/install | sh
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install
 
-# Build nix-darwin and the flake
-sudo nix run nix-darwin --extra-experimental-features nix-command --extra-experimental-features flakes -- switch --flake .#diverj
+# Restart the shell
+
+# Run the bootstrap script
+curl -fsSL https://raw.githubusercontent.com/nitronoid/nix-config/refs/heads/main/darwin-bootstrap.zsh | zsh -s -- diverj
 ```
 
 ### Iterating
