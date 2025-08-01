@@ -25,6 +25,7 @@
 					{
 						home-manager.useGlobalPkgs = true;
 						home-manager.useUserPackages = true;
+						home-manager.backupFileExtension = "backup";
 						home-manager.users.diverj = import systems/darwin/home/home.nix;
 					}
 				];
