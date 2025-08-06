@@ -1,5 +1,5 @@
 " when indenting with '>', use 4 spaces width
-set expandtab
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=-1
