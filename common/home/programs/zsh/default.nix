@@ -11,6 +11,12 @@
 		syntaxHighlighting.enable = true;
 		history.size = 50000;
 		localVariables.ZVM_INIT_MODE = "sourcing";
+		setOptions = [
+			"HIST_REDUCE_BLANKS"
+			"NO_BEEP"
+			"NO_MATCH"
+			"NO_NOTIFY"
+		];
 		plugins = [
 			{
 				name = "zsh-vi-mode";
