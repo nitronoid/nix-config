@@ -55,6 +55,7 @@
 			nurl
 			ripgrep
 			starship
+			xcodes
 		];
 		stateVersion = "25.05";
 	};
