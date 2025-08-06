@@ -51,6 +51,7 @@
 			llvm.clangWithLibcAndBasicRtAndLibcxx
 			llvm.libllvm
 			llvm.lldb
+			nurl
 			ripgrep
 			starship
 		];
