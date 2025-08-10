@@ -46,6 +46,7 @@
 			git
 			git-absorb
 			git-revise
+			gemini-cli
 			gnumake
 			mosh
 			nurl
