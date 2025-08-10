@@ -47,10 +47,6 @@
 			git-absorb
 			git-revise
 			gnumake
-			llvm.clang-tools
-			llvm.clangWithLibcAndBasicRtAndLibcxx
-			llvm.libllvm
-			llvm.lldb
 			mosh
 			nurl
 			ripgrep
