@@ -48,6 +48,7 @@
 			git-revise
 			gemini-cli
 			gnumake
+			imagemagick
 			mosh
 			nurl
 			ripgrep
