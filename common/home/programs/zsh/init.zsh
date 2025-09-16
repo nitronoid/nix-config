@@ -53,3 +53,7 @@ bindkey -M visual l up-line
 bindkey -M visual \; vi-forward-char
 
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
+
+if [ -f ~/.local.zsh ]; then
+	. ~/.local.zsh
+fi
