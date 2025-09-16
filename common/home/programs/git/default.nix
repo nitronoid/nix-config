@@ -2,14 +2,17 @@
 	programs.git = {
 		enable = true;
 
-		userName = "Jack Diver";
-		userEmail = "jackdiver@hotmail.co.uk";
-
 		aliases = {
 			plog = "log --compact-summary --graph";
 		};
 
+		includes = [{
+			path = "~/.gitconfig-layer";
+		}];
+
 		extraConfig = {
+			user.name = "Jack Diver";
+			user.email = "jackdiver@hotmail.co.uk";
 			color.ui = "true";
 			core.autocrlf = "input";
 			core.editor = "nvim";
