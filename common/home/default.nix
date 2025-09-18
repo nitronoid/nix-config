@@ -24,6 +24,11 @@
 				};
 			};
 		};
+		direnv = {
+			enable = true;
+			enableZshIntegration = true;
+			nix-direnv.enable = true;
+		};
 		eza = {
 			enable = true;
 			enableZshIntegration = true;
@@ -43,6 +48,7 @@
 	in {
 		packages = with pkgs; [
 			alejandra
+			direnv
 			git
 			git-absorb
 			git-revise
@@ -50,6 +56,7 @@
 			gnumake
 			imagemagick
 			mosh
+			nix-direnv
 			nurl
 			ripgrep
 			starship
