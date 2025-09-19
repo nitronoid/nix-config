@@ -12,7 +12,6 @@
 			nvim-treesitter.withAllGrammars
 			nvim-treesitter-textobjects
 			lightline-vim
-			rainbow-delimiters-nvim
 			mini-nvim
 			vim-clang-format
 			vim-suda
