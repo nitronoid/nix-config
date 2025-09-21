@@ -11,7 +11,6 @@ let configs = [
 \   'line.vim',
 \   'clipboard.vim',
 \   'color_scheme.vim',
-\   'syntax_highlighting.vim',
 \   'formatting.vim'
 \]
 
