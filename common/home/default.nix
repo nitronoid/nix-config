@@ -43,13 +43,9 @@
 		home-manager.enable = true;
 	};
 
-	home = let
-		llvm = pkgs.llvmPackages_latest;
-	in {
+	home = {
 		packages = with pkgs; [
 			alejandra
-			direnv
-			git
 			git-absorb
 			git-revise
 			gemini-cli
@@ -59,7 +55,6 @@
 			nix-direnv
 			nurl
 			ripgrep
-			starship
 			xcodes
 			haskellPackages.sv2v
 			iverilog
