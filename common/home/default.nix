@@ -61,6 +61,9 @@
 			ripgrep
 			starship
 			xcodes
+			haskellPackages.sv2v
+			iverilog
+			uv
 		];
 		stateVersion = "25.05";
 	};
