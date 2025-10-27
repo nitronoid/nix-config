@@ -59,6 +59,7 @@
 			haskellPackages.sv2v
 			iverilog
 			uv
+			picocom
 		];
 		stateVersion = "25.05";
 	};
