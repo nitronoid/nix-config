@@ -16,8 +16,8 @@ local custom_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 end
 
-require'lspconfig'.clangd.setup{
+vim.lsp.config("clangd", {
   init_options = { semanticHighlighting = true },
   on_attach=custom_attach,
   flags = { debounce_text_changes = 150 }
-}
+})

@@ -2,15 +2,11 @@
 	programs.git = {
 		enable = true;
 
-		aliases = {
-			plog = "log --compact-summary --graph";
-		};
-
 		includes = [{
 			path = "~/.gitconfig-layer";
 		}];
 
-		extraConfig = {
+		settings = {
 			user.name = "Jack Diver";
 			user.email = "jackdiver@hotmail.co.uk";
 			color.ui = "true";
@@ -18,6 +14,9 @@
 			core.editor = "nvim";
 			core.ignorecase = false;
 			diff.algorithm = "patience";
+			aliases = {
+				plog = "log --compact-summary --graph";
+			};
 		};
 	};
 }
